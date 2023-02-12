@@ -54,6 +54,16 @@ const svg = d3.select('body').append('svg')
 const xAxisLength = width - 2 * margin;
 const yAxisLength = height - 2 * margin;
 
+/*let tooltip = d3.select("body")
+    .append("div")
+
+    .style("z-index", "10")
+    .style("visibility", "hidden")
+    .style("color", "white")
+    .style("background-color", "gray")
+    .style("border-radius", "5px")
+    .style("padding", "5px");*/
+
 const xScale = d3.scaleLinear()
     .domain([1, d3.max(data, (d) => d.x) + 1])
     .range([0, xAxisLength]);
